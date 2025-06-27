@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JV's TodoList AI Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for better aesthetics if needed */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Lighter track */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c1c1c1; /* Slightly darker thumb */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a1a1a1; /* Darker on hover */
+    }
+    /* Ensure body takes full height for sticky footers or full-page layouts */
+    html, body {
+        height: 100%; /* Ensure html also takes full height */
+    }
+    body, #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #root {
+        flex-grow: 1;
+    }
+    /* Basic focus styles for accessibility */
+    *:focus-visible {
+        outline: 2px solid rgb(99 102 241); /* Indigo a11y focus ring */
+        outline-offset: 2px;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "html-to-image": "https://esm.sh/html-to-image@1.11.11"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-200">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

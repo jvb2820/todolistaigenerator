@@ -1,0 +1,6 @@
+{
+  "name": "JV's TodoList AI Generator",
+  "description": "An AI-powered task management application to generate, organize, and conquer your tasks. Built with React, TypeScript, and Google's Gemini API.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
